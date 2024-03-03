@@ -1,0 +1,127 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.side-nav {
+    position: fixed;
+    width: 20%;
+    height: 100vh;
+    left: -300px;
+   
+    
+    
+    
+}
+.toggle{
+    position: fixed;
+    font-size: x-large;
+    
+}
+  
+@keyframes slideIn{
+    from{
+        transform: translateX(0px);
+    }
+
+    to{
+        transform: translateX(300px);
+    }
+}
+
+@keyframes slideOut{
+    from{
+        transform: translateX(300px);
+    }
+    to{
+        transform: translateX(-10px);
+    }
+}
+
+.slide-in{
+    animation-name: slideIn;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+    animation-fill-mode:forwards;
+    animation-direction: normal;
+}
+
+.slide-out{
+    animation-name: slideOut;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+    animation-direction: normal;
+
+}
+
+
+
+.header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+   
+}
+
+.menu{
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    justify-content: flex-start;
+   
+    
+    
+    
+}
+
+.menu-item{
+    background-color: #f4f4f4;
+    border: none;
+    text-align: center;
+    padding-top: 40px;
+    width: 100%;
+    height: 40px;
+    
+}
+
+.menu-item>i{
+    margin-right: 2%;
+}
+.menu-item:link,:visited,:focus,:active{
+    text-decoration: none;
+    
+
+}
+.menu-item:hover{
+    background-color: #fff;
+   
+}
+
+.social-media{
+    display: flex;
+    margin-top: 180px;
+    justify-content: space-around;
+    padding: 10%;
+    flex-shrink: inherit;
+}
+
+.icon{
+    font-size: x-large;
+    background-color: #fff;
+}
+.icon:hover{
+    background-blend-mode: color-dodge;
+    
+}
+
+
+
+.header > button{
+    background: none;
+    font-size: x-large;
+    border: 0;
+
+}
+
